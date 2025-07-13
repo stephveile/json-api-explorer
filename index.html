@@ -11,7 +11,7 @@
     
     <section>
         <h2>Create New Post</h2>
-        <form id="postForm">
+        <form class="postForm">
             <div>
                 <label for="titleInput">Title:</label>
                 <input type="text" id="titleInput" name="title" required>
@@ -20,16 +20,22 @@
                 <label for="bodyInput">Body:</label>
                 <textarea id="bodyInput" name="body" rows="4" required></textarea>
             </div>
-            <button type="submit">Submit Post</button>
+            <button type="submit" id="submitButton">Submit Post</button>
         </form>
         <div id="formError"></div>
         <div id="formSuccess"></div>
     </section>
 
     <section>
-        <h2>Posts</h2>
+        <h2>Fetch New Post</h2>
         <button id="fetchButton">Fetch Posts</button>
         <div id="error"></div>
+    </section>
+
+    <br>
+    <section>
+        <h2>Post:</h2>
+        <div id="load"></div>
         <div id="postList"></div>
     </section>
 
